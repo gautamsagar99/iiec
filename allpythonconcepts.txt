@@ -1,0 +1,78 @@
+
+
+learning of python: 
+
+we cannot directly interact with hardware so, we take help of operating system.
+so, we need to interact with os thats it os will do all tasks and actions with hardware.
+here for interacting with os we use a language called python, here python can interact with operating syatem
+and execute the tasks.
+
+when a file is in harddisk that is a program and when the file is loading on to memory[RAM] with the help of
+os then the program file will acts like command or also called as process while executing.
+
+
+
+
+
+
+python can be used in 3 ways:
+1.live interpretor [cmd--> (type) python] after installing.[code will not be saved].
+2.write a python file and run from cmd as -> python filename.py
+3.IDE[were we have a environment to develop and many things are integrated].[cmd-->jupyter notebook]
+
+
+1.function used behind x[0] in python  >>> x.__getitem__(0)
+
+2.dir() is used to see packages or modules from python live interpretor
+ even we can specify a single module like dir(__builtins__) for functions inside them[dir(os)]. 
+ want to know details of inside of a function use help(print).
+
+
+3.if you want to see all modules installed use --->pip list
+
+4. A module is a single python file having multiple functions in it and can even have classes in it.
+
+5.live interpretor symbol >>> [REPL ->Read Evaluate Print and Loop]
+
+
+6.import os
+  os.system("chrome")  -->system function opens chrome which is in os module (if not opens set environmental path of app)
+
+
+7.type(varaible) used to check what type of variable it is.
+
+
+8.x[start:end:jump] can use for string or list
+jump will be used for jumping number of terms by default it is one[1]. 
+
+
+9. we dont have switch and increment opertors in python
+
+10.we can include else block for while loop also
+
+
+
+
+////creating cgi (common gate way interface)------used in redhatsystem
+we can connect to other system or server by using cgi
+->when we only want to view then use /var/www/html/(filename)
+->when want to execute a program file and send that information to client then:
+
+step1: place program file in the folder  /var/www/cgi-bin/
+
+step2:make that program file executable an place in that folder for that
+use chmod +x filename
+
+step3: write or use hashbang or shebang(#!) at first line of program file
+#!path of python3 software(/usr/bin/python3)
+
+step4:
+normally we can execute file by using  ./filename now in terminal.
+
+step5:write a line as print("content-type:text/html")
+
+step6:now try to ping in browser by ip address/cgi-bin/programfile
+
+now it we run on server and send to client 
+
+
